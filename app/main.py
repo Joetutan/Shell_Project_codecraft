@@ -6,7 +6,7 @@ def main():
      sys.stdout.write("$ ")
 
     # Wait for user input
-     input()
+     #input()
 
      #read the command 
      command = input()
