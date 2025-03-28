@@ -7,10 +7,8 @@ def main():
 
     # Wait for user input
      #input()
-
      #read the command 
      command = input()
-
      #print command recieved
      print(f"{command}: command not found")
 
