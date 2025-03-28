@@ -15,8 +15,9 @@ def main():
         #print command recieved
         print(f"{command}: command not found")
 
-        if input() == "exit 0":
+        if command == "exit 0":
             break
+
        
            
         
