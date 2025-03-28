@@ -13,8 +13,10 @@ def main():
         command = input()
         if command == "exit 0":
             break
-        #print command recieved
-        print(f"{command}: command not found")
+        elif command.startswith("echo "):
+            print (command[5:])
+        else:
+            print(f"{command}: command not found")
         
 
 
