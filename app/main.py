@@ -11,14 +11,15 @@ def main():
      while True:
         sys.stdout.write("$ ")
 
-        command = input()
-
-        #print command recieved
-        print(f"{command}: command not found")
-        sys.stdout.write("$ exit 0 ")
-
-        if input() == 0:
+        if input() == "exit 0":
             break
+        else:
+            command = input()
+            #print command recieved
+            print(f"{command}: command not found")
+        
+
+        
 
 
 if __name__ == "__main__":
