@@ -11,12 +11,16 @@ def main():
      while True:
         sys.stdout.write("$ ")
         command = input()
-        if command == "exit 0":
+        type_list = ["echo","exit", "type"]
+       
+        if command[5:] in type_list:
+            print(f"{command[5:]} is a shell builtin")
+        elif command == "exit 0":
             break
         elif command.startswith("echo "):
             print (command[5:])
         else:
-            print(f"{command}: command not found")
+            print(f"{command[5:]}: not found")
         
 
 
