@@ -15,7 +15,10 @@ def main():
 
         #print command recieved
         print(f"{command}: command not found")
-      
+        sys.stdout.write("$ exit 0 ")
+
+        if input() == 0:
+            break
 
 
 if __name__ == "__main__":
