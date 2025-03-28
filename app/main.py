@@ -3,16 +3,21 @@ import sys
 
 def main():
      #Uncomment this block to pass the first stage
-     sys.stdout.write("$ ")
+     
 
-    # Wait for user input
+     # Wait for user input
      #input()
-
+     #read the command 
      while True:
-        #read the command 
+        sys.stdout.write("$ ")
+
         command = input()
+
+        if command != None:
         #print command recieved
-        print(f"{command}: command not found")
+            print(f"{command}: command not found")
+
+        print("$ ")
 
 
 if __name__ == "__main__":
