@@ -13,9 +13,8 @@ def main():
 
         command = input()
 
-        if command != "$ ":
         #print command recieved
-            print(f"{command}: command not found")
+        print(f"{command}: command not found")
       
 
 
