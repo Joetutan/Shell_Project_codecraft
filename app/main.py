@@ -16,8 +16,7 @@ def main():
         if command != "$ ":
         #print command recieved
             print(f"{command}: command not found")
-
-        print(command)
+      
 
 
 if __name__ == "__main__":
