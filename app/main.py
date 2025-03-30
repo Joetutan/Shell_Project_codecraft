@@ -26,21 +26,23 @@ def main():
                     print(f"{arg}: not found")
             case [ex_path,ex_name_]:
                 if path := shutil.which(ex_path):
-
-                    result = subprocess.run([path],capture_output=True, text=True)
-                    stdout_lines = result.stdout.splitlines()
-
-                    for line in stdout_lines:
-                         if "Program Signature:" in line:
-                                signature = line.split("Program Signature:")[1].strip()
-                                break
                          
                     print(F"Program was passed {len(args_)} args (including program name).")
                     print(f"Arg #0 (program name): {ex_path}")
                     print(f"Arg #1: {ex_name_}")
-                    print(f"Program Signature: {signature}")
+                    print(f"Program Signature: {get_signature(path)}")
             case _:
                 print(f"{user_input}: command not found")
+
+def get_signature(path):
+            result = subprocess.run([path],capture_output=True, text=True)
+            stdout_lines = result.stdout.splitlines()
+
+            for line in stdout_lines:
+                    if "Program Signature:" in line:
+                        signature = line.split("Program Signature:")[1].strip()
+                        break
+            return signature
 if __name__ == "__main__":
     main()
 
