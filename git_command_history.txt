@@ -1,0 +1,73 @@
+    1  git status 
+   10  git init
+   11  git satus
+   12  git status 
+   13  git reset HEAD .
+   14  git reset
+   15  git status
+   16  git clean -n
+   17  git restore --staged .
+   18  git restore .
+   19  git clean -fd
+   20  git status
+   21  git clean -fd
+   22  git status
+   23  git init
+   24  git status
+   25  touch .gitignore
+   26  git status
+   27  git init
+   28  git status
+   29  git branch -m main
+   30  git status
+   46  git status
+   50  git status
+   66  git status
+   67  git status
+   70  git status
+   71  git status
+   73  git status
+   74  git status
+   76  git config --global --list
+   77  git config --global user.name "joetutan"
+   78  git config --global user.email "noobianjoe@outlook.com"
+   79  git config --global --list
+   80  git clone https://git.codecrafters.io/597f064bf6a0015b codecrafters-shell-python
+   83  git commit --allow-empty -m 'test'
+   84  git push origin master
+   86  git push origin master
+   87  git commit -am "comments_commit"
+   88  git commit -am "comments_commit_2"
+   89  git push origin master
+   90  git commit -am "comments_commit_3"
+   91  git push origin master
+   92  git commit -am "Input_Validation"
+   93  git push origin master
+   94  git push origin master
+   95  git commit -am "Input_Validation_v2"
+   96  git push origin master
+   97  git commit -am "Input_Validation_v3"
+   98  git push origin master
+  104  git commit -am "Attempt_#5"
+  105  git push origin master
+  106  git commit -am "Attempt_#5.1"
+  107  git push
+  108  git commit -am "Attempt_#5.2"
+  109  git push
+  110  git commit -am "Attempt_#5.3"
+  111  git push
+  112  git commit -am "Attempt_#5.4"
+  113  git push
+  114  git commit -am "Attempt_#5.5"
+  115  git push
+  116  git commit -am "Attempt_#6.0"
+  117  git push
+  118  git commit -am "Attempt_#6.1"
+  119  git push
+  120  git commit -am "Attempt_#6.2"
+  121  git push
+  122  git commit -am "Attempt_#6.3"
+  123  git push
+  124  git commit -am "Attempt_#6.3"
+  125  git push
+  185  history | grep git > git_command_history.txt
