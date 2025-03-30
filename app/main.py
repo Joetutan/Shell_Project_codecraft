@@ -3,7 +3,7 @@
 import sys
 import shutil
 import subprocess
-import os
+from pathlib import Path
 
 
 def main():
@@ -17,9 +17,12 @@ def main():
         match args_:
             case ["echo", *args]:
                 print(*args)
-            case ["pwd"]:
-                current_directory = os.getcwd()
-                print(current_directory)
+            case ["cd", *args]:
+                path = args
+                if path.is_dir():
+                     Path.chdir(path)
+                else:
+                     print(f"cd: {path}}: No such file or directory")
             case ["exit", "0"]:
                 sys.exit(0)
             case ["type", arg]:
