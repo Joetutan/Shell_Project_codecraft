@@ -3,10 +3,12 @@
 import sys
 import shutil
 import subprocess
+import os
+
 
 def main():
     # Uncomment this block to pass the first stage
-    builtin = ["echo", "exit", "type"]
+    builtin = ["echo", "exit", "type", "pwd"]
     # Wait for user input
     while True:
         sys.stdout.write("$ ")
@@ -15,6 +17,9 @@ def main():
         match args_:
             case ["echo", *args]:
                 print(*args)
+            case ["pwd"]:
+                current_directory = os.getcwd()
+                print(current_directory)
             case ["exit", "0"]:
                 sys.exit(0)
             case ["type", arg]:
